@@ -53,9 +53,15 @@ namespace ProyectoGrupo4.Vistas
             this.NuevoButton = new System.Windows.Forms.Button();
             this.ModificarButton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
+            this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -74,7 +80,7 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.Controls.Add(this.NombreTextBox);
             this.groupBox1.Controls.Add(this.NumeroTextBox);
             this.groupBox1.Controls.Add(this.CorreoTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(28, 13);
+            this.groupBox1.Location = new System.Drawing.Point(30, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(863, 217);
             this.groupBox1.TabIndex = 52;
@@ -87,7 +93,7 @@ namespace ProyectoGrupo4.Vistas
             this.IdTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.ReadOnly = true;
-            this.IdTextBox.Size = new System.Drawing.Size(166, 27);
+            this.IdTextBox.Size = new System.Drawing.Size(166, 23);
             this.IdTextBox.TabIndex = 34;
             // 
             // GeneroTextBox
@@ -96,9 +102,8 @@ namespace ProyectoGrupo4.Vistas
             this.GeneroTextBox.Location = new System.Drawing.Point(541, 165);
             this.GeneroTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GeneroTextBox.Name = "GeneroTextBox";
-            this.GeneroTextBox.Size = new System.Drawing.Size(291, 27);
+            this.GeneroTextBox.Size = new System.Drawing.Size(291, 23);
             this.GeneroTextBox.TabIndex = 44;
-        
             // 
             // label1
             // 
@@ -106,7 +111,7 @@ namespace ProyectoGrupo4.Vistas
             this.label1.Location = new System.Drawing.Point(25, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 21);
+            this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 29;
             this.label1.Text = "ID:";
             // 
@@ -116,7 +121,7 @@ namespace ProyectoGrupo4.Vistas
             this.label7.Location = new System.Drawing.Point(463, 168);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 21);
+            this.label7.Size = new System.Drawing.Size(60, 17);
             this.label7.TabIndex = 43;
             this.label7.Text = "Genero:";
             // 
@@ -126,7 +131,7 @@ namespace ProyectoGrupo4.Vistas
             this.label2.Location = new System.Drawing.Point(25, 81);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 21);
+            this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 30;
             this.label2.Text = "Identidad:";
             // 
@@ -136,7 +141,7 @@ namespace ProyectoGrupo4.Vistas
             this.EdadTextBox.Location = new System.Drawing.Point(541, 113);
             this.EdadTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.EdadTextBox.Name = "EdadTextBox";
-            this.EdadTextBox.Size = new System.Drawing.Size(291, 27);
+            this.EdadTextBox.Size = new System.Drawing.Size(291, 23);
             this.EdadTextBox.TabIndex = 42;
             this.EdadTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EdadTextBox_KeyPress);
             // 
@@ -146,7 +151,7 @@ namespace ProyectoGrupo4.Vistas
             this.label3.Location = new System.Drawing.Point(25, 127);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 21);
+            this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 31;
             this.label3.Text = "Nombre:";
             // 
@@ -156,7 +161,7 @@ namespace ProyectoGrupo4.Vistas
             this.label6.Location = new System.Drawing.Point(463, 117);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 21);
+            this.label6.Size = new System.Drawing.Size(46, 17);
             this.label6.TabIndex = 41;
             this.label6.Text = "Edad:";
             // 
@@ -166,7 +171,7 @@ namespace ProyectoGrupo4.Vistas
             this.label4.Location = new System.Drawing.Point(25, 171);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 21);
+            this.label4.Size = new System.Drawing.Size(57, 17);
             this.label4.TabIndex = 32;
             this.label4.Text = "Correo:";
             // 
@@ -177,7 +182,7 @@ namespace ProyectoGrupo4.Vistas
             this.IdentidadMaskedTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.IdentidadMaskedTextBox.Mask = "####-####-#####";
             this.IdentidadMaskedTextBox.Name = "IdentidadMaskedTextBox";
-            this.IdentidadMaskedTextBox.Size = new System.Drawing.Size(291, 27);
+            this.IdentidadMaskedTextBox.Size = new System.Drawing.Size(291, 23);
             this.IdentidadMaskedTextBox.TabIndex = 40;
             // 
             // label5
@@ -186,7 +191,7 @@ namespace ProyectoGrupo4.Vistas
             this.label5.Location = new System.Drawing.Point(463, 68);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 21);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 33;
             this.label5.Text = "Número:";
             // 
@@ -196,9 +201,8 @@ namespace ProyectoGrupo4.Vistas
             this.NombreTextBox.Location = new System.Drawing.Point(106, 121);
             this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(291, 27);
+            this.NombreTextBox.Size = new System.Drawing.Size(291, 23);
             this.NombreTextBox.TabIndex = 35;
-           
             // 
             // NumeroTextBox
             // 
@@ -206,7 +210,7 @@ namespace ProyectoGrupo4.Vistas
             this.NumeroTextBox.Location = new System.Drawing.Point(541, 65);
             this.NumeroTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NumeroTextBox.Name = "NumeroTextBox";
-            this.NumeroTextBox.Size = new System.Drawing.Size(291, 27);
+            this.NumeroTextBox.Size = new System.Drawing.Size(291, 23);
             this.NumeroTextBox.TabIndex = 37;
             this.NumeroTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumeroTextBox_KeyPress);
             // 
@@ -216,9 +220,8 @@ namespace ProyectoGrupo4.Vistas
             this.CorreoTextBox.Location = new System.Drawing.Point(106, 165);
             this.CorreoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CorreoTextBox.Name = "CorreoTextBox";
-            this.CorreoTextBox.Size = new System.Drawing.Size(291, 27);
+            this.CorreoTextBox.Size = new System.Drawing.Size(291, 23);
             this.CorreoTextBox.TabIndex = 36;
-          
             // 
             // ClienteDataGridView
             // 
@@ -235,20 +238,20 @@ namespace ProyectoGrupo4.Vistas
             // CancelarButton
             // 
             this.CancelarButton.Enabled = false;
-            this.CancelarButton.Location = new System.Drawing.Point(647, 260);
+            this.CancelarButton.Location = new System.Drawing.Point(618, 305);
             this.CancelarButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(114, 54);
+            this.CancelarButton.Size = new System.Drawing.Size(104, 42);
             this.CancelarButton.TabIndex = 50;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(525, 260);
+            this.EliminarButton.Location = new System.Drawing.Point(496, 305);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(114, 54);
+            this.EliminarButton.Size = new System.Drawing.Size(104, 42);
             this.EliminarButton.TabIndex = 49;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -256,30 +259,30 @@ namespace ProyectoGrupo4.Vistas
             // GuardarButton
             // 
             this.GuardarButton.Enabled = false;
-            this.GuardarButton.Location = new System.Drawing.Point(407, 260);
+            this.GuardarButton.Location = new System.Drawing.Point(378, 305);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(114, 54);
+            this.GuardarButton.Size = new System.Drawing.Size(104, 42);
             this.GuardarButton.TabIndex = 48;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(164, 260);
+            this.NuevoButton.Location = new System.Drawing.Point(135, 305);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(114, 54);
+            this.NuevoButton.Size = new System.Drawing.Size(104, 42);
             this.NuevoButton.TabIndex = 47;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.UseVisualStyleBackColor = true;
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Location = new System.Drawing.Point(284, 260);
+            this.ModificarButton.Location = new System.Drawing.Point(255, 305);
             this.ModificarButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ModificarButton.Name = "ModificarButton";
-            this.ModificarButton.Size = new System.Drawing.Size(114, 54);
+            this.ModificarButton.Size = new System.Drawing.Size(104, 42);
             this.ModificarButton.TabIndex = 46;
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.UseVisualStyleBackColor = true;
@@ -288,11 +291,41 @@ namespace ProyectoGrupo4.Vistas
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.label8);
+            this.gradientPanel1.Location = new System.Drawing.Point(176, 22);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(492, 42);
+            this.gradientPanel1.TabIndex = 53;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoGrupo4.Properties.Resources.avion3;
+            this.pictureBox1.Location = new System.Drawing.Point(317, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(136, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(185, 24);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Honduras Airlines ";
+            // 
             // ClienteView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 473);
+            this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ClienteDataGridView);
             this.Controls.Add(this.CancelarButton);
@@ -308,6 +341,10 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).EndInit();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,5 +373,8 @@ namespace ProyectoGrupo4.Vistas
         public System.Windows.Forms.Button ModificarButton;
         public System.Windows.Forms.MaskedTextBox IdentidadMaskedTextBox;
         public System.Windows.Forms.ErrorProvider errorProvider1;
+        private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label8;
     }
 }

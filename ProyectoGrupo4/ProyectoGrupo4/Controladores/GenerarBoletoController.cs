@@ -10,7 +10,7 @@ namespace ProyectoGrupo4.Controladores
     public class GenerarBoletoController
     {
         int total;
-        int totaladult, preciototal, CantNiños, CantBebes;
+        
         GenerarBoletoView vista;
         GenerarBoletoDAO GenerarBDAO = new GenerarBoletoDAO();
         GenerarBoleto GenerarB = new GenerarBoleto();
@@ -35,7 +35,7 @@ namespace ProyectoGrupo4.Controladores
         private void Aceptar(object sender, EventArgs e)
         {
 
-          
+         
 
             LimpiarControles();
             vista.NombreTextBox.Text = cliente.Nombre;
@@ -45,7 +45,7 @@ namespace ProyectoGrupo4.Controladores
             vista.FechaSalidaTextBox.Text = Convert.ToString(destino.FechaDeSalida);
             vista.FechaRegresoTextBox.Text = Convert.ToString(destino.FechaDeRegreso);
             vista.IdTextBox.Text = Convert.ToString(cliente.Id);
-            vista.txt_total.Text = total.ToString();
+           
 
 
             GenerarB.IdCliente = clienteDAO.GetUltimoCliente(System.Threading.Thread.CurrentPrincipal.Identity.Name);
@@ -76,7 +76,7 @@ namespace ProyectoGrupo4.Controladores
         private void Load(object sender, EventArgs e)
         {
 
-           
+            int totaladult, preciototal, CantNiños, CantBebes;
 
             listarBoleto();
             
@@ -95,9 +95,26 @@ namespace ProyectoGrupo4.Controladores
             CantNiños =  Convert.ToInt32( vista.txt_cantniños.Text);
             CantBebes = Convert.ToInt32(vista.txt_cantidadbebes.Text);
 
+            if (vista.txt_cantidadAdultos.Text == "0")
+            {
+                totaladult = 1;
+            }
+
+            if (vista.txt_cantniños.Text == "0")
+            {
+                CantNiños = 1;
+            }
+
+            if (vista.txt_cantidadbebes.Text == "0")
+            {
+                CantBebes = 1;
+            }
 
             total = totaladult * preciototal * CantNiños * CantBebes; // Codificacion Total
-            
+
+
+
+            vista.txt_total.Text = total.ToString();
 
 
 

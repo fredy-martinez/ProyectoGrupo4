@@ -33,6 +33,15 @@ namespace ProyectoGrupo4.Vistas
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AceptarButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_cantidadAdultos = new System.Windows.Forms.TextBox();
+            this.txt_cantidadbebes = new System.Windows.Forms.TextBox();
+            this.txt_cantniños = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.DestinoTextBox = new System.Windows.Forms.TextBox();
             this.ClaseTextBox = new System.Windows.Forms.TextBox();
             this.FechaRegresoTextBox = new System.Windows.Forms.TextBox();
@@ -47,16 +56,13 @@ namespace ProyectoGrupo4.Vistas
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
-            this.AceptarButton = new System.Windows.Forms.Button();
-            this.txt_total = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_cantniños = new System.Windows.Forms.TextBox();
-            this.txt_cantidadbebes = new System.Windows.Forms.TextBox();
-            this.txt_cantidadAdultos = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
+            this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -107,7 +113,7 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.NombreTextBox);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(33, 12);
+            this.groupBox1.Location = new System.Drawing.Point(44, 93);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -115,6 +121,87 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BOLETO";
+            // 
+            // AceptarButton
+            // 
+            this.AceptarButton.Location = new System.Drawing.Point(535, 357);
+            this.AceptarButton.Name = "AceptarButton";
+            this.AceptarButton.Size = new System.Drawing.Size(95, 45);
+            this.AceptarButton.TabIndex = 72;
+            this.AceptarButton.Text = "Aceptar";
+            this.AceptarButton.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(16, 244);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(114, 17);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "Cantidad Niños:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(436, 238);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 17);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Cantidad Bebes :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(436, 180);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(153, 17);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "Cantidad De Adultos :";
+            // 
+            // txt_cantidadAdultos
+            // 
+            this.txt_cantidadAdultos.Location = new System.Drawing.Point(601, 177);
+            this.txt_cantidadAdultos.Name = "txt_cantidadAdultos";
+            this.txt_cantidadAdultos.ReadOnly = true;
+            this.txt_cantidadAdultos.Size = new System.Drawing.Size(174, 23);
+            this.txt_cantidadAdultos.TabIndex = 76;
+            // 
+            // txt_cantidadbebes
+            // 
+            this.txt_cantidadbebes.Location = new System.Drawing.Point(591, 232);
+            this.txt_cantidadbebes.Name = "txt_cantidadbebes";
+            this.txt_cantidadbebes.ReadOnly = true;
+            this.txt_cantidadbebes.Size = new System.Drawing.Size(184, 23);
+            this.txt_cantidadbebes.TabIndex = 75;
+            // 
+            // txt_cantniños
+            // 
+            this.txt_cantniños.Location = new System.Drawing.Point(200, 238);
+            this.txt_cantniños.Name = "txt_cantniños";
+            this.txt_cantniños.ReadOnly = true;
+            this.txt_cantniños.Size = new System.Drawing.Size(184, 23);
+            this.txt_cantniños.TabIndex = 74;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(15, 303);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(43, 17);
+            this.label9.TabIndex = 73;
+            this.label9.Text = "Total:";
+            // 
+            // txt_total
+            // 
+            this.txt_total.Location = new System.Drawing.Point(200, 297);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.ReadOnly = true;
+            this.txt_total.Size = new System.Drawing.Size(183, 23);
+            this.txt_total.TabIndex = 72;
             // 
             // DestinoTextBox
             // 
@@ -241,86 +328,34 @@ namespace ProyectoGrupo4.Vistas
             this.NombreTextBox.Size = new System.Drawing.Size(183, 23);
             this.NombreTextBox.TabIndex = 58;
             // 
-            // AceptarButton
+            // gradientPanel1
             // 
-            this.AceptarButton.Location = new System.Drawing.Point(535, 357);
-            this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(95, 45);
-            this.AceptarButton.TabIndex = 72;
-            this.AceptarButton.Text = "Aceptar";
-            this.AceptarButton.UseVisualStyleBackColor = true;
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.label13);
+            this.gradientPanel1.Location = new System.Drawing.Point(182, 33);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(492, 42);
+            this.gradientPanel1.TabIndex = 57;
             // 
-            // txt_total
+            // pictureBox1
             // 
-            this.txt_total.Location = new System.Drawing.Point(200, 297);
-            this.txt_total.Name = "txt_total";
-            this.txt_total.ReadOnly = true;
-            this.txt_total.Size = new System.Drawing.Size(183, 23);
-            this.txt_total.TabIndex = 72;
+            this.pictureBox1.Image = global::ProyectoGrupo4.Properties.Resources.avion3;
+            this.pictureBox1.Location = new System.Drawing.Point(317, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // label9
+            // label13
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(15, 303);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 17);
-            this.label9.TabIndex = 73;
-            this.label9.Text = "Total:";
-            // 
-            // txt_cantniños
-            // 
-            this.txt_cantniños.Location = new System.Drawing.Point(200, 238);
-            this.txt_cantniños.Name = "txt_cantniños";
-            this.txt_cantniños.ReadOnly = true;
-            this.txt_cantniños.Size = new System.Drawing.Size(184, 23);
-            this.txt_cantniños.TabIndex = 74;
-            // 
-            // txt_cantidadbebes
-            // 
-            this.txt_cantidadbebes.Location = new System.Drawing.Point(591, 232);
-            this.txt_cantidadbebes.Name = "txt_cantidadbebes";
-            this.txt_cantidadbebes.ReadOnly = true;
-            this.txt_cantidadbebes.Size = new System.Drawing.Size(184, 23);
-            this.txt_cantidadbebes.TabIndex = 75;
-            // 
-            // txt_cantidadAdultos
-            // 
-            this.txt_cantidadAdultos.Location = new System.Drawing.Point(601, 177);
-            this.txt_cantidadAdultos.Name = "txt_cantidadAdultos";
-            this.txt_cantidadAdultos.ReadOnly = true;
-            this.txt_cantidadAdultos.Size = new System.Drawing.Size(174, 23);
-            this.txt_cantidadAdultos.TabIndex = 76;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(436, 180);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(153, 17);
-            this.label10.TabIndex = 77;
-            this.label10.Text = "Cantidad De Adultos :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(436, 238);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 17);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "Cantidad Bebes :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(16, 244);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(114, 17);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "Cantidad Niños:";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(136, 6);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(185, 24);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Honduras Airlines ";
             // 
             // GenerarBoletoView
             // 
@@ -328,6 +363,7 @@ namespace ProyectoGrupo4.Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(856, 617);
+            this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -336,6 +372,10 @@ namespace ProyectoGrupo4.Vistas
             this.Text = "Generar Boleto";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).EndInit();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,5 +408,8 @@ namespace ProyectoGrupo4.Vistas
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label13;
     }
 }

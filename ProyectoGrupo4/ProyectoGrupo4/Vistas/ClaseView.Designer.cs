@@ -42,8 +42,8 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
@@ -53,10 +53,10 @@ namespace ProyectoGrupo4.Vistas
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Cancelar.BackColor = System.Drawing.Color.White;
             this.btn_Cancelar.FlatAppearance.BorderSize = 0;
             this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.Maroon;
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.Black;
             this.btn_Cancelar.Location = new System.Drawing.Point(114, 317);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(80, 29);
@@ -66,10 +66,10 @@ namespace ProyectoGrupo4.Vistas
             // 
             // btn_Guardar
             // 
-            this.btn_Guardar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Guardar.BackColor = System.Drawing.Color.White;
             this.btn_Guardar.FlatAppearance.BorderSize = 0;
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Guardar.ForeColor = System.Drawing.Color.Maroon;
+            this.btn_Guardar.ForeColor = System.Drawing.Color.Black;
             this.btn_Guardar.Location = new System.Drawing.Point(24, 317);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(73, 29);
@@ -88,6 +88,7 @@ namespace ProyectoGrupo4.Vistas
             // rdb_claseEconomica
             // 
             this.rdb_claseEconomica.AutoSize = true;
+            this.rdb_claseEconomica.ForeColor = System.Drawing.Color.Black;
             this.rdb_claseEconomica.Location = new System.Drawing.Point(24, 186);
             this.rdb_claseEconomica.Name = "rdb_claseEconomica";
             this.rdb_claseEconomica.Size = new System.Drawing.Size(140, 21);
@@ -107,6 +108,7 @@ namespace ProyectoGrupo4.Vistas
             // rdb_ClasePremiumEconomic
             // 
             this.rdb_ClasePremiumEconomic.AutoSize = true;
+            this.rdb_ClasePremiumEconomic.ForeColor = System.Drawing.Color.Black;
             this.rdb_ClasePremiumEconomic.Location = new System.Drawing.Point(23, 136);
             this.rdb_ClasePremiumEconomic.Name = "rdb_ClasePremiumEconomic";
             this.rdb_ClasePremiumEconomic.Size = new System.Drawing.Size(201, 21);
@@ -126,6 +128,7 @@ namespace ProyectoGrupo4.Vistas
             // rdb_ClaseEmpresarial
             // 
             this.rdb_ClaseEmpresarial.AutoSize = true;
+            this.rdb_ClaseEmpresarial.ForeColor = System.Drawing.Color.Black;
             this.rdb_ClaseEmpresarial.Location = new System.Drawing.Point(24, 86);
             this.rdb_ClaseEmpresarial.Name = "rdb_ClaseEmpresarial";
             this.rdb_ClaseEmpresarial.Size = new System.Drawing.Size(140, 21);
@@ -162,7 +165,7 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.Controls.Add(this.rdb_ClaseEmpresarial);
             this.groupBox1.Controls.Add(this.rdb_ClasePremiumEconomic);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(23, 62);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
@@ -179,7 +182,7 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox2.Controls.Add(this.txt_ClaseEmpresarial);
             this.groupBox2.Controls.Add(this.txt_ClasePremiumEconomica);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox2.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(282, 62);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
@@ -198,16 +201,6 @@ namespace ProyectoGrupo4.Vistas
             this.gradientPanel1.Size = new System.Drawing.Size(492, 42);
             this.gradientPanel1.TabIndex = 45;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Honduras Airlines ";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoGrupo4.Properties.Resources.avion3;
@@ -218,12 +211,22 @@ namespace ProyectoGrupo4.Vistas
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(136, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Honduras Airlines ";
+            // 
             // ClaseView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(494, 370);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(499, 370);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
